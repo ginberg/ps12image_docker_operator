@@ -4,6 +4,6 @@
   "tags": ["tif analysis"],
   "authors": ["tercen"],
   "urls": ["https://github.com/ginberg/ps12image_docker_operator.git"],
-  "container": "ginberg/ps12:0.1.0"
+  "container": "ginberg/ps12:0.0.1"
 }
 

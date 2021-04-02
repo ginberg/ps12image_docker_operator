@@ -10,8 +10,8 @@ RUN git clone https://github.com/ginberg/ps12image_docker_operator.git
 
 WORKDIR /operator/ps12image_docker_operator
 
-RUN echo 0.1.0 && git pull
-RUN git checkout 0.1.0
+RUN echo 0.0.1 && git pull
+RUN git checkout 0.0.1
 
 RUN R -e "renv::restore(confirm=FALSE)"
 
