@@ -1,0 +1,9 @@
+{
+  "name": "PS12",
+  "description": "The PS12 operator performs data retrieval and analysis of tif images.",
+  "tags": ["tif analysis"],
+  "authors": ["tercen"],
+  "urls": ["https://github.com/ginberg/ps12image_docker_operator.git"],
+  "container": "ginberg/ps12:0.1.0"
+}
+
