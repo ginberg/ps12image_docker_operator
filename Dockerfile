@@ -6,9 +6,9 @@ WORKDIR /operator
 RUN apt-get update
 RUN apt-get install -y libtiff-tools
 
-RUN git clone https://github.com/ginberg/ps12image_docker_operator.git
+RUN git clone https://github.com/ginberg/ps12image_operator.git
 
-WORKDIR /operator/ps12image_docker_operator
+WORKDIR /operator/ps12image_operator
 
 RUN echo 0.0.1 && git pull
 RUN git checkout 0.0.1
