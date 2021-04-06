@@ -10,7 +10,7 @@ RUN git clone https://github.com/ginberg/ps12image_operator.git
 
 WORKDIR /operator/ps12image_operator
 
-RUN echo 0.0.3 && git pull
+RUN echo 0.0.3_ && git pull
 RUN git checkout 0.0.3
 
 RUN R -e "renv::restore(confirm=FALSE)"
