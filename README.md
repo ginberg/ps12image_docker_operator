@@ -9,7 +9,7 @@ https://github.com/ginberg/ps12image_docker_operator.git
 ##### Build & Run
 
 ```bash
-VERSION=0.0.2
+VERSION=0.0.3
 docker build -t ginberg/ps12:$VERSION .
 docker push ginberg/ps12:$VERSION
 git add -A && git commit -m "$VERSION" && git tag -a $VERSION -m "++" && git push && git push --tags
