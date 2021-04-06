@@ -10,12 +10,12 @@ RUN git clone https://github.com/ginberg/ps12image_operator.git
 
 WORKDIR /operator/ps12image_operator
 
-RUN echo 0.0.2 && git pull
-RUN git checkout 0.0.2
+RUN echo 0.0.3 && git pull
+RUN git checkout 0.0.3
 
 RUN R -e "renv::restore(confirm=FALSE)"
 
 ENV TERCEN_SERVICE_URI https://tercen.com
 
-ENTRYPOINT [ "R","--no-save","--no-restore","--no-environ","--slave","-f","main.R"]
+ENTRYPOINT [ "R","--no-save","--no-restore","--no-environ","--slave","-f","main.R","--args"]
 CMD [ "--taskId", "someid", "--serviceUri", "https://tercen.com", "--token", "sometoken"]
